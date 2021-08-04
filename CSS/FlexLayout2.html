@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Layout</title>
+    <style>
+        header{
+            background-color: greenyellow;
+            padding: 20px;
+            font-size: 40px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        section{
+            display: flex;
+        }
+        section>div{
+            height: 600px;
+            border: 1px solid;
+        }
+        #main{
+            flex-grow: 4;
+            display: flex;
+            
+        }
+        #Sidebar{
+            flex-grow: 1;
+            background-color: yellowgreen;
+        }
+        #Sidebar>a{
+            text-decoration: none;
+            display: block;
+            font-size: large;
+            padding: 10px;
+            color: honeydew;
+            
+        }
+        #One,#Two,#Three{
+            flex-grow: 1;
+            align-items: center;
+            justify-content: space-around;
+            
+            
+        }
+        #One,#Two,#Three{
+            display: flex;
+            flex-direction: column;
+           
+        }
+        #One>div,#Two>div,#Three>div{
+            
+            width: 200px;
+            max-height: 150px;
+            flex-grow: 1;
+            background-color: tomato;
+           
+        }
+        .Prod{
+           text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>Demo Shop</header>
+    <section>
+        <div id="main">
+            <div id="One">
+                <div class="Prod">1</div>
+                <div class="Prod">2</div>
+                <div class="Prod">3</div>
+            </div>
+            <div id="Two">
+                <div class="Prod">1</div>
+                <div class="Prod">2</div>
+                <div class="Prod">3</div>
+            </div>
+            <div id="Three">
+                <div class="Prod">1</div>
+                <div class="Prod">2</div>
+                <div class="Prod">3</div>
+            </div>
+        </div>
+        <div id="Sidebar">
+            <a href="#"> Home</a>
+            <a href="#"> About</a>
+            <a href="#"> Contact</a>
+        </div>
+    </section>
+</body>
+</html>
