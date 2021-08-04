@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Layout</title>
+    <style>
+        header{
+            text-align: center;
+            padding: 20px;
+            text-transform: uppercase;
+            color: blueviolet;
+            text-shadow: 0px 1px rgb(39, 39, 77);
+            font-size: 40px;
+            background-color: rgb(243, 195, 179);
+        }
+        section{
+            display: flex;
+        }
+      #Sidebar{
+          height: 600px;
+          background-color: forestgreen;
+          flex-grow: 1;
+      }
+      #main{
+        height: 600px;
+        background-color: rgb(29, 149, 165);
+        flex-grow: 5;
+      }
+      #Sidebar>a{
+          display: block;
+          text-decoration: none;
+          padding: 10px;
+          color: ghostwhite;
+          font-size: 17px;
+      }
+      #main{
+          display: flex;
+          flex-direction: column;
+      }
+      
+      #Mobile,#Computer{
+          height: 300px;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+         
+      }
+      .Prod{
+          height: 200px;
+          max-width: 300px;
+          background-color: gold;
+          flex-grow: 1;
+      }
+     
+    </style>
+</head>
+<body>
+    <header>
+        Shaha Electronics
+    </header>
+    <section>
+        <div id="Sidebar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <div id="main">
+            <div id="Mobile">
+                <div class="Prod">One</div>
+                <div class="Prod">Two</div>
+                <div class="Prod">Three</div>
+            </div>
+            <div id="Computer">
+                <div class="Prod">One</div>
+                <div class="Prod">Two</div>
+                <div class="Prod">Three</div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
