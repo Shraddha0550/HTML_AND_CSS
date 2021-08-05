@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            padding: 20px;
+            text-transform: uppercase;
+            color: chartreuse;
+            background-color: cornflowerblue;
+            text-align: center;
+            font-size: 40px;
+        }
+        section>div{
+            height: 500px;
+            border: 2px solid;
+        }
+        #DivOne,#DivTwo{
+            display: flex;
+        }
+        #First,#Third,#Left,#Right,#LeftOne,#RightOne{
+            flex-grow: 1;
+            border: 2px solid;
+           
+        }
+        #Second,#LeftTwo,#RightTwo{
+            flex-grow: 2;
+            border: 2px solid;
+            
+        }
+        #Left,#Right{
+            display: flex;
+            flex-direction: column;
+        }
+        #LeftThree,#RightThree{
+            flex-grow: 3;
+            border: 2px solid;
+        }
+
+    </style>
+</head>
+<body>
+    <header>Demo Shop</header>
+    <section>
+        <div id="DivOne">
+            <div id="First"></div>
+            <div id="Second"></div>
+            <div id="Third"></div>    
+        </div>
+        <div id="DivTwo">
+            <div id="Left">
+                <div id="LeftOne"></div>
+                <div id="LeftTwo"></div>
+                <div id="LeftThree"></div>
+            </div>
+            <div id="Right">
+                <div id="RightOne"></div>
+                <div id="RightTwo"></div>
+                <div id="RightThree"></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
